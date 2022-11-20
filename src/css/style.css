@@ -1,0 +1,50 @@
+html,
+body {
+    height: 100vh;
+    background: #0a0a2a;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25%;
+}
+
+.card {
+    perspective: 1000px;
+    height:300px;
+    width: 300px;
+    margin: 5px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .back-card {
+ position: absolute;
+ transform: rotatey(0deg);
+ backface-visibility: hidden;
+ transition: transform 0.4s linear;
+
+}
+
+.card .front-card {
+    position: absolute;
+    transform: rotateY(100deg);
+    backface-visibility: hidden;
+    transition: transform 0.4s linear;
+}
+
+.card:hover .back-card {
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+
+.card:hover .front-card {
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
