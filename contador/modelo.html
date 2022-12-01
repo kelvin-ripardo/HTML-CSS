@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contador de numeros</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <h1>Contador</h1>
+    </header>
+
+    <section>
+        <div class="bntOne">
+            <label for="nOne"> Numero Inicial</label>
+            <input type="number" name="inic" id="nOne" placeholder="Digite um numero" min="0">
+            
+        </div>
+
+        <div class="bntOne">
+            <label for="nTwo">Numero Final</label>
+            <input type="number" name="fim" id="nTwo" placeholder="Digite um numero" min="0">
+        </div>
+
+        <div class="bntOne" >
+            <label for="nThree">Passo </label>
+            <input class="pass" type="number" name="passos" id="nThree" placeholder="Digite um numero" min="0">
+        </div>
+
+        <div class="bntV">
+            <input type="button" value="Contar" onclick="contar()">
+            <input type="reset" value="Reiniciar" id="reset">
+        </div>
+
+            <div id="res">
+                <p><strong> Iniciando contagem contagem...</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Capsula Corporation</p>
+    </footer>
+
+
+    <script src="src/js/script.js"></script>
+
+
+</body>
+</html>
